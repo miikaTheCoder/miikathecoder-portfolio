@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New' monospace;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    color: rgb(0, 255, 0);
+    font-size: 2em;
+}
+.section h2 {
+    color: greenyellow;
+}
+
+.section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.Capitalize {
+    text-transform: capitalize;
+}
