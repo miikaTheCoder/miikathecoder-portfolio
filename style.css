@@ -13,7 +13,7 @@ body {
 
 .title {
     color: rgb(0, 255, 0);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .section h2 {
@@ -34,21 +34,14 @@ body {
     text-transform: uppercase;
 }
 
-.title {
-    margin-bottom: 0;
-}
-
 .section h4 {
     font-size: 2.5rem;
     margin: 0 auto;
     margin-top: 45px;
 }
 
-.skills {
 
-}
-
-.typing-demo-wrapper {
+.typing-wrapper {
     height: 200px;
     overflow: auto;
     /*This part is important for centering*/
@@ -56,9 +49,9 @@ body {
     place-items: center;
 }
 
-.typing-demo {
+.typing {
     width: 13ch;  /* Adjust based on your text length */
-    animation: typing 1.5s steps(13), blink .5s step-end infinite alternate;
+    animation: typing 1.5s steps(13), blink 1s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
