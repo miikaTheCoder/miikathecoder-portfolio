@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: white;
-    font-family: 'Courier New' monospace;
+    font-family: 'Source Code Pro', sans-serif;
     text-align: center;
     padding-top: 20px;
 }
@@ -66,4 +66,9 @@ body {
 @keyframes blink {
     50% { border-color: transparent }
 }         
-     
+
+/* FOOTER */
+
+.logos {
+    max-width: 75px;
+}
