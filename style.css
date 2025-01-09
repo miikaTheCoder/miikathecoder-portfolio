@@ -40,6 +40,10 @@ body {
     margin-top: 45px;
 }
 
+.projectsImage {
+    max-width: 50px;
+    border-radius: 5px;
+}
 
 .typing-wrapper {
     height: 200px;
@@ -73,3 +77,6 @@ body {
     max-width: 75px;
 }
 
+.footer-title {
+    font-size: 2rem;
+}
