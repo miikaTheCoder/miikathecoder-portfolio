@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
         case 'help':
           addConsoleLine('whoami, skills, projects and help (this command)');
           break;
+          case 'video':
+            addConsoleLine(innerHTML = `<a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Video`);
+            break;
         case 'whoami':
           addConsoleLine('I am MiikaTheCoder, a 20-year-old developer interested in coding, privacy, security, cybersecurity, and AI.');
           break;
