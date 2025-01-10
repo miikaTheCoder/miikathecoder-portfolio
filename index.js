@@ -28,8 +28,27 @@ document.addEventListener('DOMContentLoaded', function() {
         case 'help':
           addConsoleLine('whoami, skills, projects and help (this command)');
           break;
+          case 'frontendwisdom':
+            case 'codequote':
+              const frontendQuotes = [
+                'Good design is as little design as possible. - Dieter Rams',
+                'Code is like humor. When you have to explain it, it’s bad. - Cory House',
+                'The best error message is the one that never shows up. - Thomas Fuchs',
+                'Any fool can write code that a computer can understand. Good programmers write code that humans can understand. - Martin Fowler',
+                'First, solve the problem. Then, write the code. - John Johnson',
+                'Clean code always looks like it was written by someone who cares. - Robert C. Martin',
+                'Front-end development is like playing with Legos, but you have to make your own pieces. - Anonymous',
+                'CSS is like the secret sauce of front-end development. It makes everything look good. - Anonymous',
+                'JavaScript is the duct tape of the Internet. - Anonymous',
+                'The art of debugging is twice as hard as writing the code in the first place. - Brian Kernighan'
+              ];
+              const randomQuote = frontendQuotes[Math.floor(Math.random() * frontendQuotes.length)];
+              addConsoleLine(randomQuote);
+              break;
           case 'video':
-            addConsoleLine(innerHTML = `<a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Video`);
+          case 'rickroll':
+            addConsoleLine('You\'ve found the easter egg!');
+            window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
             break;
         case 'whoami':
           addConsoleLine('I am MiikaTheCoder, a 20-year-old developer interested in coding, privacy, security, cybersecurity, and AI.');

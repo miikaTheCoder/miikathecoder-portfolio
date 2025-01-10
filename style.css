@@ -30,6 +30,10 @@ body {
     text-transform: capitalize;
 }
 
+.aboutMe {
+    font-size: 2rem;
+}
+
 .uppercase {
     text-transform: uppercase;
 }
