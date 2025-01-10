@@ -45,6 +45,58 @@ body {
     border-radius: 5px;
 }
 
+.console {
+    background: black;
+    color: #00ff00; /* Neon Green */
+    padding: 10px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .console-content {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .console-line {
+    margin: 0;
+  }
+  
+  .console-prompt {
+    color: #00ff00;
+  }
+  
+  .console-path {
+    color: #fff;
+  }
+  
+  .console-cursor {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  
+  .console-input {
+    background: transparent;
+    border: none;
+    color: #00ff00;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+    outline: none;
+  }
+
 .typing-wrapper {
     height: 200px;
     overflow: auto;
@@ -66,7 +118,6 @@ body {
 @keyframes typing {
     from { width: 0 }
 }
-
 @keyframes blink {
     50% { border-color: transparent }
 }         
