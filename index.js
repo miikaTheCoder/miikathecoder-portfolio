@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
           break;
           
           case 'foss':
-            addConsoleLine('I like FOSS (Free and Open Source Software) a lot. In the future and even now I wanna be a part of it.');
+            addConsoleLine('I like FOSS (Free and Open Source Software) a lot. In the future and even now I wanna be contribute to it soon.');
             break;
         case 'skills':
           addConsoleLine('Skills: Web Developer (HTML, CSS & beginner in JS), Local AI for fun, Daily Driving Linux (I use Arch, btw)');
@@ -63,6 +63,9 @@ document.addEventListener('DOMContentLoaded', function() {
         case 'projects':
           addConsoleLine('Project 1: This Portfolio Website');
           addConsoleLine('Project 2: A lot of python projects...');
+          break;
+        case 'linux':
+          addConsoleLine('I use Linux and I believe philosophy of Free and Open Source Software.')
           break;
         default:
           addConsoleLine('Command not recognized. Try "whoami", "codequote", or "foss".');
