@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     consoleInput.addEventListener('keydown', function(event) {
       if (event.key === 'Enter') {
         event.preventDefault();
-        console.log('Enter has been pressed'); // This should now log when Enter is pressed
+        console.log('Enter has been pressed');
         const command = consoleInput.value.toLowerCase().trim();
         if (command) {
           addConsoleLine(`hacker@portfolio:~ ${command}`);
@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function processCommand(command) {
       switch(command) {
         case 'help':
-          addConsoleLine('whoami, skills, projects and help (this command)');
+          addConsoleLine('whoami, skills, projects, where and help (this command)');
           break;
-          case 'frontendwisdom':
+        case 'frontendwisdom':
             case 'codequote':
               const frontendQuotes = [
                 'Good design is as little design as possible. - Dieter Rams',
@@ -53,6 +53,9 @@ document.addEventListener('DOMContentLoaded', function() {
         case 'whoami':
           addConsoleLine('I am MiikaTheCoder, a 20-year-old developer interested in coding, privacy, security, cybersecurity, and AI.');
           break;
+        case 'where':
+          addConsoleLine('based in Finland');
+          break;
         case 'skills':
           addConsoleLine('Skills: Web Developer (HTML, CSS & JS), Local AI for fun, Daily Driving Linux (I use Arch, btw)');
           break;
@@ -60,6 +63,10 @@ document.addEventListener('DOMContentLoaded', function() {
           addConsoleLine('Project 1: Portfolio Website');
           addConsoleLine('Project 2: CLI tool for network scanning');
           break;
+        case 'archlinux':
+          addConsoleLine('Yes, I do use Arch linux (btw).');
+          break;
+          
         default:
           addConsoleLine('Command not recognized. Try "whoami", "skills", or "projects".');
       }
