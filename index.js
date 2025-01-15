@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Enter has been pressed');
         const command = consoleInput.value.toLowerCase().trim();
         if (command) {
-          addConsoleLine(`hacker@portfolio:~ ${command}`);
+          addConsoleLine(`miikaTheCoder@portfolio:~ ${command}`);
           processCommand(command);
           consoleInput.value = '';
         }
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function addConsoleLine(text) {
       const line = document.createElement('div');
       line.className = 'console-line';
-      line.innerHTML = `<span class="console-prompt">hacker@portfolio:</span><span class="console-path">~</span> ${text}`;
+      line.innerHTML = `<span class="console-prompt"></span><span class="console-path"></span> ${text}`;
       consoleContent.insertBefore(line, consoleInput.parentElement);
       consoleContent.scrollTop = consoleContent.scrollHeight;
     }
@@ -50,25 +50,35 @@ document.addEventListener('DOMContentLoaded', function() {
             addConsoleLine('You\'ve found the easter egg!');
             window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
             break;
-        case 'whoami':
-          addConsoleLine('I am MiikaTheCoder, a 20-year-old developer interested in coding, privacy, security, cybersecurity, and AI.');
+          case 'whoami':
+            addConsoleLine('Living in Finland. 20 years old Interested in coding, privacy, security, cybersecurity and AI.')
           break;
         case 'where':
           addConsoleLine('based in Finland');
           break;
+          
+          case 'foss':
+            addConsoleLine('I like FOSS (Free and Open Source Software) a lot. In the future and even now I wanna be contribute to it soon.');
+            break;
+          case 'github':
+            window.open('https://www.github.com/miikaTheCoder');
+            break;
         case 'skills':
-          addConsoleLine('Skills: Web Developer (HTML, CSS & JS), Local AI for fun, Daily Driving Linux (I use Arch, btw)');
+          addConsoleLine('Skills: Web Developer (HTML, CSS & beginner in JS), Local AI for fun, Daily Driving Linux (I use Arch, btw)');
           break;
         case 'projects':
-          addConsoleLine('Project 1: Portfolio Website');
-          addConsoleLine('Project 2: CLI tool for network scanning');
+          addConsoleLine('Project 1: This Portfolio Website');
+          addConsoleLine('Project 2: A lot of python projects...');
+          break;
+        case 'linux':
+          addConsoleLine('I use Linux and I believe philosophy of Free and Open Source Software.')
           break;
         case 'archlinux':
           addConsoleLine('Yes, I do use Arch linux (btw).');
           break;
           
         default:
-          addConsoleLine('Command not recognized. Try "whoami", "skills", or "projects".');
+          addConsoleLine('Command not recognized. Try "whoami", "codequote", or "foss".');
       }
     }
   });
