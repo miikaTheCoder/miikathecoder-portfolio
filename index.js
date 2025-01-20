@@ -59,6 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
         case 'where':
           addConsoleLine('based in Finland');
           break;
+        case 'AI':
+          addConsoleLine('');
+          break;
           
           case 'foss':
             addConsoleLine('I like FOSS (Free and Open Source Software) a lot. In the future and even now I wanna be contribute to it soon.');

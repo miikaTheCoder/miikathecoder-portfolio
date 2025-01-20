@@ -74,7 +74,7 @@ body {
   
   .console-line {
     margin: 0;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
   
   .console-prompt {
@@ -108,7 +108,7 @@ body {
     font-family: 'Source Code Pro', monospace;
     font-size: 14px;
     outline: none;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
 
 .typing-wrapper {
