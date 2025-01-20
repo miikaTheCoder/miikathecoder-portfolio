@@ -26,7 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function processCommand(command) {
       switch(command) {
         case 'help':
-          addConsoleLine('whoami, skills, projects, where and help (this command)');
+          addConsoleLine('whoami, skills, projects, foss, archlinux, where and help (this command)');
+          break;
+        case 'ls':
+          addConsoleLine('Desktop    Documents    Downloads    Music    Pictures    Public    Templates    Videos    Secret');
           break;
         case 'frontendwisdom':
             case 'codequote':
