@@ -20,6 +20,10 @@ body {
   margin: 0;
 }
 
+.portfoliooooo {
+  max-width: 225px;
+  border-radius: 175px;
+}
 .myName {
   margin-top: 0;
 }
@@ -59,7 +63,7 @@ body {
 
 .console {
     background: black;
-    color: #00ff00; /* Neon Green */
+    color: #00ff00; 
     padding: 10px;
     font-family: 'Source Code Pro', monospace;
     font-size: 14px;
